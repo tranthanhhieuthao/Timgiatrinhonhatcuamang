@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    function minArray(Array) {
+        if (Array.length == 0)
+            return -1;
+        let vitri;
+        let min=Array[0];
+        for (let i=0;i<Array.length;i++){
+            if (min>Array[i]){
+                min=Array[i];
+                vitri=i;
+            }
+        }
+        return  vitri;
+    }
+    let vitriMin= minArray([1,6,2,3,-1,9,8,45,2,3]);
+    alert(vitriMin);
+</script>
+</body>
+</html>
